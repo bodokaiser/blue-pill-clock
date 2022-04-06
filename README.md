@@ -1,1 +1,1 @@
-# Blue Pill Clock
+# Blue Pill Minimal
