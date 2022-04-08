@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "cortex-debug",
+      "request": "launch",
+      "name": "Debug (OpenOCD)",
+      "servertype": "openocd",
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": "Cargo Build (debug)",
+      "executable": "./target/thumbv7m-none-eabi/debug/blue-pill-minimal",
+      "device": "STM32F103C8T6",
+      "configFiles": ["./openocd.cfg"],
+      "svdFile": "${workspaceRoot}/.vscode/STM32F103.svd"
+    }
+  ]
+}
